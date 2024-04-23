@@ -1,0 +1,1 @@
+/Users/coltwhitley/Documents/Personal_Projects/Software_Projects/Rust_Book/variables/target/debug/variables: /Users/coltwhitley/Documents/Personal_Projects/Software_Projects/Rust_Book/variables/src/main.rs
