@@ -1,0 +1,1 @@
+/Users/coltwhitley/Documents/Personal_Projects/Software_Projects/Rust_Book/rectangles/target/debug/rectangles: /Users/coltwhitley/Documents/Personal_Projects/Software_Projects/Rust_Book/rectangles/src/main.rs
