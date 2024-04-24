@@ -1,0 +1,1 @@
+/Users/coltwhitley/Documents/Personal_Projects/Software_Projects/Rust_Book/resturant/target/debug/libresturant.rlib: /Users/coltwhitley/Documents/Personal_Projects/Software_Projects/Rust_Book/resturant/src/lib.rs
