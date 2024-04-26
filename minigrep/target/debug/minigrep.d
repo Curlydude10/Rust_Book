@@ -1,0 +1,1 @@
+/Users/coltwhitley/Documents/Personal_Projects/Software_Projects/Rust_Book/minigrep/target/debug/minigrep: /Users/coltwhitley/Documents/Personal_Projects/Software_Projects/Rust_Book/minigrep/src/lib.rs /Users/coltwhitley/Documents/Personal_Projects/Software_Projects/Rust_Book/minigrep/src/main.rs
