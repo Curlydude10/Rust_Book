@@ -1,53 +1,24 @@
-#[derive(Debug, PartialEq, Copy, Clone)]
-enum ShirtColor {
-    Red,
-    Blue,
-}
-
-struct Inventory {
-    shirts: Vec<ShirtColor>,
-}
-
-impl Inventory{
-    fn giveaway(&self, user_preference: Option<ShirtColor>)
-        -> ShirtColor {
-            user_preference.unwrap_or_else(|| self.most_stocked())
+impl Config {
+    pub fn build(args: &[String]) -> Result<Config, &'static str> {
+        if args.len() < 3 {
+            return Err("not enough arguments");
         }
 
-    fn most_stocked(&self) -> ShirtColor {
-        let mut num_red = 0;
-        let mut num_blue = 0;
+        let query = args[1].clone();
+        let file_path = args[2].clone();
 
-        for color in &self.shirts{
-            match color {
-                ShirtColor::Red => num_red += 1,
-                ShirtColor::Blue => num_blue += 1,
-            }
-        }
-        if num_red > num_blue {
-            ShirtColor::Red
-        } else {
-            ShirtColor::Blue
-        }
+        let ignore_case = env::var("IGNORE_CASE").is_ok();
+
+        Ok(Config {
+            query,
+            file_path,
+            ignore_case,
+        })
     }
-
 }
+
 fn main() {
-    let store = Inventory {
-        shirts: vec![ShirtColor::Blue, ShirtColor::Red, ShirtColor::Blue],
-    };
+    let v1: Vec<i32> = vec![1, 2, 3];
 
-    let user_pref1 = Some(ShirtColor::Red);
-    let giveaway1 = store.giveaway(user_pref1);
-    println!(
-        "The user with preference {:?} gets {:?}",
-        user_pref1, giveaway1
-    );
-
-    let user_pref2 = None; 
-    let giveaway2 = store.giveaway(user_pref2);
-    println!(
-        "The user with preference {:?} gets {:?}",
-        user_pref2, giveaway2
-    );
+    v1.iter().map(|x| x + 1).collect();
 }
