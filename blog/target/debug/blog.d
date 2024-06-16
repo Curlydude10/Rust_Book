@@ -1,0 +1,1 @@
+/Users/coltwhitley/Documents/Personal_Projects/Software_Projects/Rust_Book/blog/target/debug/blog: /Users/coltwhitley/Documents/Personal_Projects/Software_Projects/Rust_Book/blog/src/lib.rs /Users/coltwhitley/Documents/Personal_Projects/Software_Projects/Rust_Book/blog/src/main.rs
